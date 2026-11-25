@@ -46,7 +46,7 @@ void loop()
 {
   controller.update();
 
-  // 1. Take 5 rapid samples and average them to reduce single-read sensor noise -- method from AI
+  // 1. Take 5 rapid samples and average them to reduce single-read sensor noise 
   long sumR = 0, sumG = 0, sumB = 0;
   for (int i = 0; i < 5; i++)
   {
@@ -60,7 +60,7 @@ void loop()
   int avgG = sumG / 5;
   int avgB = sumB / 5;
 
-  // 2. Compute channel differences to separate color hues more reliably than raw brightness  -- method from AI
+  // 2. Compute channel differences to separate color hues more reliably than raw brightness  
   int diff_gr = avgG - avgR;
   int diff_gb = avgG - avgB; // Computed for separating similar green/yellow tones
   int diff_rb = avgR - avgB; // Computed for comparing red against blue
