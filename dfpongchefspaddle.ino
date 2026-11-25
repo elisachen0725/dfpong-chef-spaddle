@@ -38,6 +38,7 @@ void setup()
   controller.setMoveSpeed(10);
   controller.setPaddleSize(110);
 
+  //sound & audio from game CookingMama
   controller.setHitSound("glass");       
   controller.setScoreSound("https://raw.githubusercontent.com/elisachen0725/dfpongscoresound/main/scoresound.mp3");     
   controller.setWinSound("https://raw.githubusercontent.com/elisachen0725/dfpongwinsound/main/winsound.mp3");   
